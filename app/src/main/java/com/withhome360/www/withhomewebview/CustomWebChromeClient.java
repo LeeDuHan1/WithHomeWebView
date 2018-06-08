@@ -37,12 +37,10 @@ public class CustomWebChromeClient extends WebChromeClient {
 
     @Override
     public void onShowCustomView(View view, WebChromeClient.CustomViewCallback callback) {
-
         if (mCustomView != null) {
             callback.onCustomViewHidden();
             return;
         }
-
         mOriginalOrientation = mActivity.getRequestedOrientation();
         FrameLayout decor = (FrameLayout) mActivity.getWindow().getDecorView();
         Log.d("뷰크기",decor.getHeight()+" ");

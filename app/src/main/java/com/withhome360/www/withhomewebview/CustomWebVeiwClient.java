@@ -25,7 +25,7 @@ public class CustomWebVeiwClient extends WebViewClient {
     @Override
     public void onPageStarted(WebView view, String url, Bitmap favicon) {
         super.onPageStarted(view, url, favicon);
-        progressDialog.setMessage("Loading");
+        progressDialog.setMessage("불러오는 중입니다.");
         progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progressDialog.show();
 
